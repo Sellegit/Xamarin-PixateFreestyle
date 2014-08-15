@@ -23,7 +23,7 @@
 			<parameter name="o2" type="java.lang.Object" />
 		</method>
 	</add-node>
-
+  <remove-node path="/api/package[@name='com.pixate.freestyle.cg.paints']/class[@name='PXImagePaint']" />
 	<!-- Remove duplicated that hides inherited fields (http://forums.xamarin.com/discussion/9117/binding-generator-skipping-due-to-duplicate-field-method-or-nested-type-name) -->
 	<remove-node path="/api/package[@name='com.pixate.freestyle.cg.paints']/class[@name='PXGradient']/field[@name='gradientUnits']" />
 	<remove-node path="/api/package[@name='com.pixate.freestyle.cg.paints']/class[@name='PXRadialGradient']/field[@name='center']" />

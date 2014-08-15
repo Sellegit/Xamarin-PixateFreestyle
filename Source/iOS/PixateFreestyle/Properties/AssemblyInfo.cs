@@ -24,4 +24,4 @@ using MonoTouch.ObjCRuntime;
 //[assembly: AssemblyKeyFile("")]
 
 // Link the native Pixate Freestyle library
-[assembly: LinkWith ("PixateFreestyle", LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64 | LinkTarget.ArmV7 | LinkTarget.ArmV7s, LinkerFlags= "-ObjC", Frameworks= "CoreGraphics CoreText QuartzCore")]
+[assembly: LinkWith ("libPixateFreestyle.a", LinkTarget.Simulator | LinkTarget.Simulator64 | LinkTarget.Arm64 | LinkTarget.ArmV7 | LinkTarget.ArmV7s, LinkerFlags= "-ObjC", Frameworks= "CoreGraphics CoreText QuartzCore")]
